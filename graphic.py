@@ -55,7 +55,7 @@ def do_int():   #integrate
     n_y = random_y[np.logical_and(f_of_x <= random_y, random_y <= 0)]
     
     #integrate
-    int_result["text"] = ((p_x.shape[0]-n_x.shape[0])/n) * (high_x-low_x)*(high_y-low_y)
+    int_result["text"] = round(((p_x.shape[0]-n_x.shape[0])/n) * (high_x-low_x)*(high_y-low_y), 1)
 
     #code for plotting
     figure = Figure()
