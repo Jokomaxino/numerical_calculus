@@ -18,7 +18,7 @@ if purpose == 'dif':
     #get and show extrapolated differential
     h = .005
     derivative = (8*(f(t+h/4) - f(t-h/4)) - (f(t+h/2) - f(t-h/2)))/3/h
-    print('derivative:', round(derivative,12))
+    print('derivative:', derivative)
     
 elif purpose == 'int':
     #user input (limits and expression)
@@ -59,7 +59,7 @@ elif purpose == 'int':
     
     #get and show integral
     integral = ((p_x.shape[0]-n_x.shape[0])/n) * (high_x-low_x)*(high_y-low_y)
-    print('integral:', round(integral, 2))
+    print('integral:', integral)
 
 else: print("I can't do that.")
 
